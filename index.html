@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin Geospatial</title>
+  <meta name="description" content="Franklin Geospatial.">
+  <link rel="canonical" href="https://franklingeospatial.ie/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Franklin Geospatial">
+  <meta property="og:title" content="Franklin Geospatial">
+  <meta property="og:description" content="Franklin Geospatial.">
+  <meta property="og:url" content="https://franklingeospatial.ie/">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121413" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c1e1d'/%3E%3Cpath d='M11 8h11v3h-7.5v4H21v3h-6.5v6H11z' fill='%23f2f1ed'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fbfaf8;
+      --fg: #1c1e1d;
+      --muted: #666a67;
+      --rule: #d9d7d1;
+      --accent: #1f6f5c;
+      --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121413;
+        --fg: #edece8;
+        --muted: #9a9e9a;
+        --rule: #353936;
+        --accent: #7fc4ae;
+      }
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 3rem 1.5rem;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font);
+      font-size: 1rem;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Sections added later (projects, about) go inside <main>, below the header. */
+    main {
+      width: 100%;
+      max-width: 40rem;
+      text-align: center;
+    }
+
+    .wordmark {
+      margin: 0;
+      font-size: clamp(1.75rem, 1.2rem + 3vw, 2.75rem);
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+    }
+
+    .contact {
+      margin: 1.25rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.25rem 0.75rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.25em;
+    }
+
+    a:hover,
+    a:focus-visible {
+      text-decoration-color: currentColor;
+    }
+
+    a:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 class="wordmark">Franklin Geospatial</h1>
+      <p class="contact">
+        <a href="https://github.com/nathanfranklin">GitHub</a>
+      </p>
+    </header>
+  </main>
+</body>
+</html>
